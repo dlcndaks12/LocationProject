@@ -13,4 +13,11 @@
     				  		 ,#{id})
     </insert>
     
+    <select id="getLocation" parameterType="hashmap" resultType="hashmap">
+    	SELECT *
+    	FROM LOCATION
+    	WHERE id = #{id}
+    	ORDER BY idx desc limit 1
+    </select>
+    
 </mapper>

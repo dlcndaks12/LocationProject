@@ -12,4 +12,8 @@ public class MainDAO extends AbstractDAO {
 	public int insertLocation(HashMap<String, Object> param) {
 		return (int) insert("MainDAO.insertLocation", param);
 	}
+	
+	public HashMap<String, Object> getLocation(HashMap<String, Object> param) {
+		return (HashMap<String, Object>) selectOne("MainDAO.getLocation", param);
+	}
 }

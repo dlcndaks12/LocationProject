@@ -17,4 +17,8 @@ public class MainService {
 	public int insertLocation(HashMap<String, Object> param) {
 		return mainDAO.insertLocation(param);
 	}
+	
+	public HashMap<String, Object> getLocation(HashMap<String, Object> param) {
+		return mainDAO.getLocation(param);
+	}
 }
